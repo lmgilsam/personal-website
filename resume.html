@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Leonardo Gil Samanez</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a class="nav-brand" href="index.html">LMGS</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <main class="resume-page">
+    <div class="resume-ghost" aria-hidden="true">CV</div>
+
+    <div class="resume-header">
+      <p class="resume-eyebrow">Curriculum Vitae</p>
+      <h1 class="resume-page-title">Resume</h1>
+      <p class="resume-intro">Management Information Systems student and aspiring software engineer — read the full document below, or download the PDF.</p>
+    </div>
+
+    <div class="resume-paper reveal">
+      <iframe
+        class="resume-embed"
+        src="resume.pdf#toolbar=0&navpanes=0"
+        title="Leonardo Gil Samanez Resume"
+      ></iframe>
+      <img
+        class="resume-image"
+        src="resume-page.png"
+        alt="Leonardo Gil Samanez resume"
+      >
+    </div>
+
+    <div class="resume-download-wrapper reveal">
+      <a href="resume.pdf" download class="cta-button">Download PDF</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Gil Samanez &nbsp;|&nbsp; LMGS</p>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+</body>
+</html>

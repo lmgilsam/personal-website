@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me — Leonardo Gil Samanez</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a class="nav-brand" href="index.html">LMGS</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <main class="contact-page">
+    <div class="contact-ghost" aria-hidden="true">Contact Me</div>
+
+    <section class="contact-header" aria-labelledby="contact-title">
+      <p class="contact-eyebrow">GET IN TOUCH</p>
+      <h1 class="contact-heading" id="contact-title">Let's talk</h1>
+      <p class="contact-intro">Whether you're recruiting, collaborating, or just want to connect, send a note and I'll get back to you soon.</p>
+    </section>
+
+    <div class="contact-layout">
+      <div class="contact-profile reveal">
+        <img src="profile.png" alt="Leonardo Gil Samanez" class="contact-photo">
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/leonardo-gil-samanez/" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <button type="button" class="contact-link contact-email-btn" id="email-toggle" aria-label="Show email address">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+        </div>
+        <p class="contact-email-display" id="email-display" hidden>leonardomgil0@gmail.com</p>
+      </div>
+
+      <div class="contact-form-wrapper reveal">
+        <h2 class="contact-form-heading">Let's get in touch</h2>
+
+        <p class="contact-success" id="form-success" hidden>Thanks — your message has been sent!</p>
+        <p class="contact-error" id="form-error" hidden>Something went wrong. Please try again or email me directly.</p>
+
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mlgyylgb" method="POST">
+          <input type="hidden" name="_subject" value="New message from your portfolio site">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Gil Samanez &nbsp;|&nbsp; LMGS</p>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+  <script>
+    document.getElementById('email-toggle').addEventListener('click', function () {
+      var display = document.getElementById('email-display');
+      display.hidden = !display.hidden;
+    });
+
+    var contactForm = document.getElementById('contact-form');
+    var successMessage = document.getElementById('form-success');
+    var errorMessage = document.getElementById('form-error');
+
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      var submitButton = contactForm.querySelector('button[type="submit"]');
+      var formData = new FormData(contactForm);
+
+      successMessage.hidden = true;
+      errorMessage.hidden = true;
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+
+      fetch(contactForm.action, {
+        method: contactForm.method,
+        body: formData,
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error('Form submission failed');
+          }
+
+          contactForm.reset();
+          contactForm.hidden = true;
+          successMessage.hidden = false;
+        })
+        .catch(function () {
+          errorMessage.hidden = false;
+        })
+        .finally(function () {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Send Message';
+        });
+    });
+  </script>
+
+</body>
+</html>

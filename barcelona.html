@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcelona — Photography | LMGS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a class="nav-brand" href="index.html">LMGS</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <!--
+    PLACE PAGE: Barcelona, Spain
+    ─────────────────────────────────────────────────────────────
+    TO SWAP IN REAL PHOTOS:
+      Replace each https://picsum.photos/... src with your own
+      image path (relative or absolute). Keep the alt text
+      meaningful for screen readers.
+
+    TO ADD MORE PHOTOS:
+      Copy any <a class="photo"> block below and paste it inside
+      the .masonry div. The masonry layout adjusts automatically.
+
+    TO ADD A NEW PLACE ENTIRELY:
+      Copy this whole file, rename it (e.g. tokyo.html), update
+      the editorial header, ghost word, and photos, then add
+      a matching .place tile to the #photography section in index.html.
+    ─────────────────────────────────────────────────────────────
+  -->
+
+  <main class="photography">
+    <div class="phot-ghost" aria-hidden="true">BARCELONA</div>
+    <div class="phot-inner">
+
+      <section class="phot-hero phot-place-hero" aria-labelledby="barcelona-title">
+        <p class="phot-eyebrow"><span class="phot-accent-red">Catalonia</span>, <span class="phot-accent-red">Spain</span></p>
+        <h1 id="barcelona-title" class="phot-heading">Barcelona</h1>
+        <p class="phot-intro">Gaudí details, hillside views, and Mediterranean light across the city.</p>
+        <a href="photography.html" class="back-link">← All places</a>
+      </section>
+
+      <!-- Masonry grid — photos display at their natural dimensions.
+           To add more photos: copy any <a class="photo"> block and paste it here. -->
+      <div class="masonry">
+
+        <!-- Sagrada Família framed by park trees — portrait -->
+        <a href="#" class="photo" aria-label="Open photo: La Sagrada Família framed by trees">
+          <img src="photos/barcelona/DSC03353.JPG"
+               alt="La Sagrada Família's ornate Nativity facade framed by trees in Plaça de Gaudí on a clear summer day"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Cascada fountain, Parc de la Ciutadella — portrait -->
+        <a href="#" class="photo" aria-label="Open photo: Cascada fountain in Parc de la Ciutadella">
+          <img src="photos/barcelona/DSC03387.JPG"
+               alt="Gold-topped Cascada monumental fountain cascading over mossy rocks into a turquoise pool in Parc de la Ciutadella"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Park Güell entrance pavilions with city view — portrait -->
+        <a href="#" class="photo" aria-label="Open photo: Park Güell entrance pavilions at golden hour">
+          <img src="photos/barcelona/DSC03391.JPG"
+               alt="Gaudí's mosaic-topped gingerbread pavilions at the Park Güell entrance with Barcelona and the Mediterranean stretching to the horizon at golden hour"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Barcelona panorama from hilltop — landscape (cover photo) -->
+        <a href="#" class="photo" aria-label="Open photo: Barcelona city panorama from a hilltop">
+          <img src="photos/barcelona/DSC03401.JPG"
+               alt="Wide panoramic view of Barcelona's dense rooftops and skyline stretching to the sea, shot from a hilltop at golden hour"
+               width="1616" height="1080">
+        </a>
+
+        <!-- Park Güell main staircase at dusk — portrait -->
+        <a href="#" class="photo" aria-label="Open photo: Park Güell dragon staircase at dusk">
+          <img src="photos/barcelona/DSC03409.JPG"
+               alt="Park Güell's symmetrical main staircase with dragon fountain and mosaic balustrades leading up to the Hypostyle Room at dusk"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Sagrada Família Nativity facade close-up — portrait -->
+        <a href="#" class="photo" aria-label="Open photo: Sagrada Família Nativity facade close-up">
+          <img src="photos/barcelona/IMG_5740.jpg"
+               alt="Close-up street-level view of La Sagrada Família's intricate Nativity facade with cranes overhead on a sunny day"
+               width="4284" height="5712">
+        </a>
+
+        <!-- Barcelona Cathedral front facade — portrait -->
+        <a href="#" class="photo" aria-label="Open photo: Barcelona Cathedral front facade">
+          <img src="photos/barcelona/IMG_5849.jpg"
+               alt="Gothic Barcelona Cathedral (Catedral de la Santa Creu i Santa Eulàlia) facade with spires against a deep blue sky and crowds on the plaza steps"
+               width="4284" height="5712">
+        </a>
+
+      </div><!-- /masonry -->
+    </div><!-- /phot-inner -->
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Gil Samanez &nbsp;|&nbsp; LMGS</p>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+  <!-- Lightbox logic — shared across all place pages -->
+  <script src="gallery.js"></script>
+
+</body>
+</html>

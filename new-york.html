@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New York — Photography | LMGS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a class="nav-brand" href="index.html">LMGS</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <!--
+    PLACE PAGE: New York, USA
+    ─────────────────────────────────────────────────────────────
+    TO SWAP IN REAL PHOTOS:
+      Replace each https://picsum.photos/... src with your own
+      image path (relative or absolute). Keep the alt text
+      meaningful for screen readers.
+
+    TO ADD MORE PHOTOS:
+      Copy any <a class="photo"> block below and paste it inside
+      the .masonry div. The masonry layout adjusts automatically.
+
+    TO ADD A NEW PLACE ENTIRELY:
+      Copy this whole file, rename it (e.g. tokyo.html), update
+      the editorial header, ghost word, and photos, then add
+      a matching .place tile to the #photography section in index.html.
+    ─────────────────────────────────────────────────────────────
+  -->
+
+  <main class="photography">
+    <div class="phot-ghost" aria-hidden="true">NEW YORK</div>
+    <div class="phot-inner">
+
+      <section class="phot-hero phot-place-hero" aria-labelledby="new-york-title">
+        <p class="phot-eyebrow">New York, <span class="phot-accent-red">USA</span></p>
+        <h1 id="new-york-title" class="phot-heading">New York</h1>
+        <p class="phot-intro">Museum rooms, skyline light, wet streets, and night bridges across the city.</p>
+        <a href="photography.html" class="back-link">← All places</a>
+      </section>
+
+      <!-- Masonry grid — photos display at their natural dimensions.
+           To swap in a new photo: replace the src with your file path.
+           To add more: copy any <a class="photo"> block and paste it here. -->
+      <div class="masonry">
+
+        <!-- Metropolitan Museum of Art — portrait 1080×1616 -->
+        <a href="#" class="photo" aria-label="Open photo: Metropolitan Museum of Art gallery">
+          <img src="photos/new-york/new-york-01.jpg"
+               alt="Bronze sculpture and Renaissance paintings inside the Metropolitan Museum of Art"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Upper West Side intersection — landscape 1616×1080 -->
+        <a href="#" class="photo" aria-label="Open photo: Upper West Side street corner">
+          <img src="photos/new-york/new-york-02.jpg"
+               alt="Yellow taxi at a sunlit Upper West Side intersection beside a grand Beaux-Arts building"
+               width="1616" height="1080">
+        </a>
+
+        <!-- Red Fiat 500 in the rain — landscape 1616×1080 -->
+        <a href="#" class="photo" aria-label="Open photo: Red Fiat 500 at a Manhattan intersection in the rain">
+          <img src="photos/new-york/new-york-03.jpg"
+               alt="Bright red vintage Fiat 500 racing car parked at a wet Manhattan crossroads on a rainy day"
+               width="1616" height="1080">
+        </a>
+
+        <!-- NYC skyline at golden hour — landscape 1616×1080 -->
+        <a href="#" class="photo" aria-label="Open photo: NYC skyline across the river at golden hour">
+          <img src="photos/new-york/new-york-04.jpg"
+               alt="Lower Manhattan skyline glowing gold across the Hudson River at sunset"
+               width="1616" height="1080">
+        </a>
+
+        <!-- Yayoi Kusama-style mirror ball installation — portrait 1080×1616 -->
+        <a href="#" class="photo" aria-label="Open photo: Mirror ball art installation with city view">
+          <img src="photos/new-york/new-york-05.jpg"
+               alt="Mirrored spheres filling a room at an observation deck, Manhattan skyline visible through the window"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Broadway looking south from Columbia — portrait 1500×2000 -->
+        <a href="#" class="photo" aria-label="Open photo: Broadway avenue looking south toward Midtown">
+          <img src="photos/new-york/new-york-06.jpg"
+               alt="Looking south down a wide Manhattan avenue flanked by Columbia University buildings on a clear autumn day"
+               width="1500" height="2000">
+        </a>
+
+        <!-- NYC skyline at sunset from a rooftop — portrait 1500×2000 -->
+        <a href="#" class="photo" aria-label="Open photo: Manhattan skyline at fiery sunset">
+          <img src="photos/new-york/new-york-07.jpg"
+               alt="Empire State Building and the Manhattan skyline lit up under a vivid red-orange sunset sky"
+               width="1500" height="2000">
+        </a>
+
+        <!-- Williamsburg Bridge at night — portrait 1500×2000 -->
+        <a href="#" class="photo" aria-label="Open photo: Williamsburg Bridge lights at night">
+          <img src="photos/new-york/new-york-08.jpg"
+               alt="Williamsburg Bridge strung with lights arching over the dark East River at night"
+               width="1500" height="2000">
+        </a>
+
+      </div><!-- /masonry -->
+    </div><!-- /phot-inner -->
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Gil Samanez &nbsp;|&nbsp; LMGS</p>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+  <!-- Lightbox logic — shared across all place pages -->
+  <script src="gallery.js"></script>
+
+</body>
+</html>

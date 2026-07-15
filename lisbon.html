@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisbon — Photography | LMGS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a class="nav-brand" href="index.html">LMGS</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <!--
+    PLACE PAGE: Lisbon, Portugal
+    ─────────────────────────────────────────────────────────────
+    TO SWAP IN REAL PHOTOS:
+      Replace each https://picsum.photos/... src with your own
+      image path (relative or absolute). Keep the alt text
+      meaningful for screen readers.
+
+    TO ADD MORE PHOTOS:
+      Copy any <a class="photo"> block below and paste it inside
+      the .masonry div. The masonry layout adjusts automatically.
+
+    TO ADD A NEW PLACE ENTIRELY:
+      Copy this whole file, rename it (e.g. tokyo.html), update
+      the editorial header, ghost word, and photos, then add
+      a matching .place tile to the #photography section in index.html.
+    ─────────────────────────────────────────────────────────────
+  -->
+
+  <main class="photography">
+    <div class="phot-ghost" aria-hidden="true">LISBON</div>
+    <div class="phot-inner">
+
+      <section class="phot-hero phot-place-hero" aria-labelledby="lisbon-title">
+        <p class="phot-eyebrow"><span class="phot-accent-green">Lisbon Region</span>, <span class="phot-accent-red">Portugal</span></p>
+        <h1 id="lisbon-title" class="phot-heading">Lisbon</h1>
+        <p class="phot-intro">Tilework, hills, river light, and day trips through Portugal's capital region.</p>
+        <a href="photography.html" class="back-link">← All places</a>
+      </section>
+
+      <!-- Masonry grid — photos display at their natural dimensions.
+           To add more photos: copy any <a class="photo"> block and paste it here. -->
+      <div class="masonry">
+
+        <!-- Grilled octopus dish — portrait 1080×1616 -->
+        <a href="#" class="photo" aria-label="Open photo: Grilled octopus at a Lisbon restaurant">
+          <img src="photos/lisbon/lisbon-01.jpg"
+               alt="A whole grilled octopus plated with sweet potato purée and roasted tomatoes at a Lisbon restaurant"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Praça do Comércio at dusk — portrait 1080×1616 -->
+        <a href="#" class="photo" aria-label="Open photo: Praça do Comércio equestrian statue at dusk">
+          <img src="photos/lisbon/lisbon-02.jpg"
+               alt="Equestrian statue of King José I and the Arco da Rua Augusta at Praça do Comércio under a blue dusk sky"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Quinta da Regaleira, Sintra — landscape 1616×1080 -->
+        <a href="#" class="photo" aria-label="Open photo: Quinta da Regaleira palace in Sintra">
+          <img src="photos/lisbon/lisbon-03.jpg"
+               alt="The neo-Manueline Quinta da Regaleira palace rising above stone walls and ancient trees in Sintra"
+               width="1616" height="1080">
+        </a>
+
+        <!-- Pena Palace clock tower, Sintra — portrait 1080×1616 -->
+        <a href="#" class="photo" aria-label="Open photo: Pena Palace red clock tower in Sintra">
+          <img src="photos/lisbon/lisbon-04.jpg"
+               alt="Red and grey battlemented clock tower of Pena Palace framed by yellow walls against a cloudy sky"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Regaleira lake tower — portrait 1080×1616 -->
+        <a href="#" class="photo" aria-label="Open photo: Stone tower on a lake in Quinta da Regaleira">
+          <img src="photos/lisbon/lisbon-05.jpg"
+               alt="A ruined stone tower on a small island reflected in the still green lake of Quinta da Regaleira"
+               width="1080" height="1616">
+        </a>
+
+        <!-- Colourful Lisbon street — landscape 2000×1332 -->
+        <a href="#" class="photo" aria-label="Open photo: Cobblestone street with pastel facades in Lisbon">
+          <img src="photos/lisbon/lisbon-06.jpg"
+               alt="Two people walking down a cobblestone Lisbon street lined with pastel-coloured buildings and wrought-iron balconies"
+               width="2000" height="1332">
+        </a>
+
+        <!-- Castelo de São Jorge window view — portrait 1500×2000 -->
+        <a href="#" class="photo" aria-label="Open photo: Lisbon rooftops seen through a Gothic castle window">
+          <img src="photos/lisbon/lisbon-07.jpg"
+               alt="Lisbon's terracotta rooftops and the city skyline framed by a Gothic arched stone window in Castelo de São Jorge"
+               width="1500" height="2000">
+        </a>
+
+      </div><!-- /masonry -->
+    </div><!-- /phot-inner -->
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Gil Samanez &nbsp;|&nbsp; LMGS</p>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+  <!-- Lightbox logic — shared across all place pages -->
+  <script src="gallery.js"></script>
+
+</body>
+</html>

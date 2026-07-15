@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConocoPhilips "Truth in Energy" — Leonardo Gil Samanez</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a class="nav-brand" href="index.html">LMGS</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <main class="project-detail">
+    <div class="project-detail-masthead">
+      <div class="project-detail-ghost" aria-hidden="true">CONOCO</div>
+      <a href="projects.html" class="back-link">&larr; Back to Projects</a>
+      <p class="project-detail-eyebrow">CASE STUDY &middot; CONOCOPHILLIPS &middot; TRUTH IN ENERGY</p>
+      <h1 class="project-detail-title">ConocoPhilips "Truth in Energy"</h1>
+      <p class="project-detail-lede">Participated in ConocoPhilips' "Truth in Energy" initiative, exploring transparency, sustainability, and innovation within the energy industry.</p>
+
+      <div class="project-meta-strip stat-strip">
+        <div class="stat">
+          <span class="stat-label">Role</span>
+          <span class="stat-value">Project Manager</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Initiative</span>
+          <span class="stat-value">Truth in Energy</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Focus</span>
+          <span class="stat-value">Transparency &amp; Sustainability</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Format</span>
+          <span class="stat-value">Collaborative Team Project</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="project-presentation" aria-labelledby="conocophillips-presentation-title">
+      <div class="project-presentation-heading">
+        <p class="section-marker">Presentation</p>
+        <h2 id="conocophillips-presentation-title">Truth in Energy</h2>
+        <p>Scroll or use the arrow controls to move through the presentation.</p>
+      </div>
+      <div class="inline-presentation" tabindex="0" aria-label="Truth in Energy presentation viewer">
+        <img
+          class="inline-presentation-slide"
+          src="projects/conocophilips-slides/Slide1.PNG"
+          alt="Truth in Energy presentation slide 1"
+        >
+        <button class="inline-presentation-control inline-presentation-control--prev" type="button" aria-label="Previous slide">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="inline-presentation-control inline-presentation-control--next" type="button" aria-label="Next slide">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <span class="inline-presentation-counter" aria-live="polite">1 / 12</span>
+      </div>
+    </section>
+
+    <section class="project-section scroll-reveal reveal">
+      <p class="section-marker">01 / Overview</p>
+      <div class="project-overview-grid">
+        <p class="lede-inline">Researched industry trends and developed insights on how energy companies can communicate more effectively with stakeholders.</p>
+        <p class="project-section-body">Participated in ConocoPhilips' "Truth in Energy" initiative, exploring transparency, sustainability, and innovation within the energy industry.</p>
+      </div>
+    </section>
+
+    <figure class="project-section project-team-image scroll-reveal reveal">
+      <img src="projects/conocophilips.png" alt="ConocoPhilips Truth in Energy team at John K. Stubblefield Auditorium">
+    </figure>
+
+    <section class="project-section scroll-reveal reveal">
+      <p class="section-marker">02 / Key Highlights</p>
+      <div class="project-outcome-grid blurb-grid">
+        <div class="outcome-card">
+          <span class="outcome-number">01</span>
+          <span class="outcome-label">Analysis</span>
+          <p class="outcome-body">Analyzed energy sector data and market trends to identify key transparency challenges</p>
+        </div>
+        <div class="outcome-card">
+          <span class="outcome-number">02</span>
+          <span class="outcome-label">Recommendations</span>
+          <p class="outcome-body">Developed recommendations for improving stakeholder communication</p>
+        </div>
+        <div class="outcome-card">
+          <span class="outcome-number">03</span>
+          <span class="outcome-label">Presentation</span>
+          <p class="outcome-body">Presented findings as part of a collaborative team project</p>
+        </div>
+      </div>
+    </section>
+
+    <blockquote class="project-pullquote scroll-reveal reveal">Developed insights on how energy companies can communicate more effectively with stakeholders.</blockquote>
+
+    <section class="project-section project-download-section scroll-reveal reveal">
+      <p class="section-marker">03 / Documents</p>
+      <a href="projects/Truth_in_Energy_Polyester.pptx" class="project-cta" download><i class="fa-solid fa-download"></i>Download Presentation</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Gil Samanez &nbsp;|&nbsp; LMGS</p>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+  <script>
+    (function () {
+      const viewer = document.querySelector('.inline-presentation');
+      const slide = viewer.querySelector('.inline-presentation-slide');
+      const counter = viewer.querySelector('.inline-presentation-counter');
+      const previous = viewer.querySelector('.inline-presentation-control--prev');
+      const next = viewer.querySelector('.inline-presentation-control--next');
+      const slideCount = 12;
+      let currentSlide = 1;
+      let wheelLocked = false;
+
+      function showSlide(number) {
+        currentSlide = Math.max(1, Math.min(number, slideCount));
+        slide.src = 'projects/conocophilips-slides/Slide' + currentSlide + '.PNG';
+        slide.alt = 'Truth in Energy presentation slide ' + currentSlide;
+        counter.textContent = currentSlide + ' / ' + slideCount;
+        previous.disabled = currentSlide === 1;
+        next.disabled = currentSlide === slideCount;
+      }
+
+      previous.addEventListener('click', function () {
+        showSlide(currentSlide - 1);
+      });
+
+      next.addEventListener('click', function () {
+        showSlide(currentSlide + 1);
+      });
+
+      viewer.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') showSlide(currentSlide - 1);
+        if (event.key === 'ArrowRight') showSlide(currentSlide + 1);
+      });
+
+      viewer.addEventListener('wheel', function (event) {
+        if (wheelLocked || Math.abs(event.deltaY) < 10) return;
+        const movingForward = event.deltaY > 0;
+        const canMove = movingForward ? currentSlide < slideCount : currentSlide > 1;
+        if (!canMove) return;
+        event.preventDefault();
+        showSlide(currentSlide + (movingForward ? 1 : -1));
+        wheelLocked = true;
+        window.setTimeout(function () {
+          wheelLocked = false;
+        }, 450);
+      }, { passive: false });
+
+      showSlide(1);
+    }());
+  </script>
+</body>
+</html>

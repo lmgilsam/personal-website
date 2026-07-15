@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography | LMGS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a class="nav-brand" href="index.html">LMGS</a>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <!--
+    HOW TO ADD A NEW PLACE:
+      1. Copy any existing place page (e.g. barcelona.html), rename it
+         (e.g. tokyo.html), update the intro card and photos inside.
+      2. Add a matching .place tile below — copy one of the three tiles,
+         set href to your new file, update the cover image and labels.
+      No changes needed to gallery.js or style.css.
+  -->
+
+  <main class="photography">
+    <div class="phot-ghost" aria-hidden="true">GALLERY</div>
+    <div class="phot-inner">
+
+      <section class="phot-hero phot-title-card" aria-labelledby="photography-title">
+        <p class="phot-eyebrow phot-eyebrow--red">Gallery Mode</p>
+        <h1 id="photography-title" class="phot-heading">Photos Around the World</h1>
+        <p class="phot-intro">Moments captured across cities, coastlines, and quiet corners of the world.</p>
+      </section>
+
+      <!--
+        HOW TO ADD A NEW PLACE:
+          Copy a .place tile below, set href to your new place page,
+          swap the cover image src/alt, and update the city/country labels.
+      -->
+      <div class="places-grid">
+
+        <!-- Place tile: Barcelona, Spain -->
+        <a href="barcelona.html" class="place reveal">
+          <img
+            src="photos/barcelona/DSC03401.JPG"
+            alt="Wide panoramic view of Barcelona's rooftops and skyline stretching to the sea at golden hour"
+            width="1616" height="1080">
+          <div class="place-label">
+            <span class="place-city">Barcelona</span>
+            <span class="place-country">Spain</span>
+          </div>
+        </a>
+
+        <!-- Place tile: Lisbon, Portugal -->
+        <a href="lisbon.html" class="place reveal">
+          <img
+            src="photos/lisbon/lisbon-03.jpg"
+            alt="The neo-Manueline Quinta da Regaleira palace rising above stone walls and ancient trees in Sintra"
+            width="1616" height="1080">
+          <div class="place-label">
+            <span class="place-city">Lisbon</span>
+            <span class="place-country">Portugal</span>
+          </div>
+        </a>
+
+        <!-- Place tile: New York, USA -->
+        <a href="new-york.html" class="place reveal">
+          <img
+            src="photos/new-york/new-york-04.jpg"
+            alt="Lower Manhattan skyline glowing gold across the Hudson River at sunset"
+            width="1616" height="1080">
+          <div class="place-label">
+            <span class="place-city">New York</span>
+            <span class="place-country">USA</span>
+          </div>
+        </a>
+
+      </div><!-- /places-grid -->
+    </div><!-- /phot-inner -->
+  </main>
+
+  <footer>
+    <p>© 2026 Leonardo Gil Samanez &nbsp;|&nbsp; LMGS</p>
+  </footer>
+
+  <script src="scroll-reveal.js" defer></script>
+</body>
+</html>
